@@ -1,0 +1,334 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/a_light.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    {% if title %}
+    <title>Django Blog - {{ title }}</title>
+    {% else %}
+    <title>Django Blog</title>
+    {% endif %}
+  </head>
+  <body>
+    <main>
+      <h2>Cards Primary</h2>
+      <div class="card-group">
+        <div class="card card-primary text-center">
+          <img
+            class="card-img-top"
+            src="https://static3.avast.com/10001215/web/i/index2/for-home.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <div class="badge badge-primary badge-sm">FOR HOME</div>
+            <div class="card-title">
+              <h1>Home</h1>
+            </div>
+            <p class="card-text">
+              You can Contact to you freind in Privet room as simply as posible
+            </p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="{% url 'blog-home' %}"
+              class="btn btn-outline-secondary btn-icon-right"
+            >
+              <span
+                >Home
+                <img
+                  src="https://static3.avast.com/1/web/i/v2/components/arrow-m-right-orange.png"
+                  height="24"
+                />
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="card card-primary text-center">
+          <img
+            class="card-img-top"
+            src="https://static3.avast.com/10001215/web/i/index2/for-partners.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <div class="badge badge-primary badge-sm">FOR BUSINESS</div>
+            <div class="card-title">
+              update your profile with just with on click
+            </div>
+            <p class="card-text">
+              we you use the best database for your privacy and relible
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-outline-secondary btn-icon-right">
+              <span
+                >BUSINESS SECURITY
+                <img
+                  src="https://static3.avast.com/1/web/i/v2/components/arrow-m-right-orange.png"
+                  height="24"
+                />
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="card card-primary text-center">
+          <img
+            class="card-img-top"
+            src="https://static3.avast.com/10001215/web/i/index2/for-business.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <div class="badge badge-primary badge-sm">FOR PARTNERS</div>
+            <div class="card-title">
+              see your all post and message to your freinds
+            </div>
+            <p class="card-text">
+              We partner with the world’s leading mobile and broadband network
+              operators to offer security, privacy, and digital parenting
+              solutions.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-outline-secondary btn-icon-right">
+              <span
+                >PARTNER SECURITY
+                <img
+                  src="https://static3.avast.com/1/web/i/v2/components/arrow-m-right-orange.png"
+                  height="24"
+                />
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2>Accordion</h2>
+      <div class="accordion-container">
+        <div class="accordion">
+          <div class="card card-accordion">
+            <div class="card-header" id="headingOne">
+              <span
+                >What are the system requirements for Avast Premium
+                Security?</span
+              >
+              <a
+                href="#collapseOne"
+                class="icon-btn"
+                data-toggle="collapse"
+              ></a>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card card-accordion">
+            <div class="card-header" id="headingTwo">
+              <span
+                >What's the difference between Avast Premium Security
+                (Single-Device) and Avast Premium Security (Multi-Device)
+                subscriptions?</span
+              >
+              <a
+                href="#collapseTwo"
+                class="icon-btn"
+                data-toggle="collapse"
+              ></a>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card card-accordion">
+            <div class="card-header" id="headingThree">
+              <span
+                >Can I change the 10 devices activated with my Avast Premium
+                Security (Multi-Device) subscription?</span
+              >
+              <a
+                href="#collapseThree"
+                class="icon-btn"
+                data-toggle="collapse"
+              ></a>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card card-accordion">
+            <div class="card-header" id="headingFour">
+              <span
+                >Is it necessary to uninstall my previous Avast Antivirus
+                version before upgrading to Avast Premium Security on my
+                PC?</span
+              >
+              <a
+                href="#collapseFour"
+                class="icon-btn"
+                data-toggle="collapse"
+              ></a>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    Resources
+    <header class="site-header">
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-steel fixed-top"
+        id="navbar"
+      >
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'a-light' %}">A_light</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggle"
+            aria-controls="navbarToggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'blog-about' %}"
+                >About</a
+              >
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="#">Login</a>
+              <a class="nav-item nav-link" href="#">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: #232249;
+        margin: 0;
+        font-weight: 300;
+      }
+    </style>
+  </body>
+</html>
